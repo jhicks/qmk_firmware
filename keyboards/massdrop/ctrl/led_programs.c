@@ -99,21 +99,29 @@ led_setup_t leds_rainbow_s[] = {
     { .end = 1 },
 };
 
+// Purple
+led_setup_t leds_purple[] = {
+    { .hs = 0, .he = 100, .rs = 166, .re = 166, .gs = 91, .ge = 91, .bs = 166, .be = 166, .ef = EF_NONE },
+    { .end = 1 },
+};
+
+
 //Add new LED animations here using one from above as example
 //The last entry must be { .end = 1 }
 //Add the new animation name to the list below following its format
 
 void *led_setups[] = {
-    leds_rainbow_s,
-    leds_rainbow_ns,
-    leds_teal_salmon,
+    leds_white,
+    leds_purple,
     leds_yellow,
     leds_red,
     leds_green,
     leds_blue,
-    leds_white,
     leds_white_with_red_stripe,
     leds_black_with_red_stripe,
+    leds_rainbow_s,
+    leds_rainbow_ns,
+    leds_teal_salmon,
     leds_off
 };
 
